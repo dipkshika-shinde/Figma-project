@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import "tailwindcss";
+
+/* custom properties */
+@theme{
+    --color-green:#2BCBBB;
+    --color-black:#263238;
+    --color-darkgreen: #388E3B;
+    --font-lato: "Lato", sans-serif;
+}
+
+
+
+
+/* repeated */
+@layer base{
+
+    * {
+        @apply transition-all duration-200;
+        @apply transition-colors duration-200;
+      }
+    
+
+    h1{
+        @apply text-[64px] leading-[76px];
+    }
+
+    h2{
+        @apply text-[43px] leading-[45px];
+    }
+
+    h3{
+        @apply text-[28px] leading-[36px];
+    }
+
+    
+    h4{
+        @apply text-[20px] leading-[28px];
+    }
+
+    span{
+        @apply text-green-500
+    }
+
+    
+    p{
+        @apply text-[15px] leading-[20px];
+    }
+
+    a{
+        @apply hover:cursor-pointer hover:font-semibold
+    }
+
+    button{
+        @apply bg-green-400 px-4 py-2 flex items-center justify-center gap-2 text-white hover:bg-green-500 hover:cursor-pointer;
+    }
+}
